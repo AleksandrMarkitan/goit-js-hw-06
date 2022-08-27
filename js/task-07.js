@@ -3,6 +3,6 @@ const refs = {
   textOutput: document.querySelector('#text'),
 };
 
-refs.rangeInput.addEventListener('change', e => {
+refs.rangeInput.addEventListener('input', e => {
   refs.textOutput.style.fontSize = `${e.target.value}px`;
 });

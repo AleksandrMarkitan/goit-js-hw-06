@@ -12,6 +12,6 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 function onChangeColorButtonHandler() {
-  refs.body.style.backgroundColor = `${getRandomHexColor()}`;
-  refs.outputColor.textContent = `${refs.body.style.backgroundColor}`;
+  refs.outputColor.textContent = `${getRandomHexColor()}`;
+  refs.body.style.backgroundColor = refs.outputColor.textContent;
 }
